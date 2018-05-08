@@ -1441,6 +1441,9 @@ height: 789px; */
 	top:-133px;
 	left:50px;
 }
+.bg-white-middle .left,.right{
+	cursor: pointer;
+}
 .bg-white-middle>.left{
 	position: absolute;
 	width:48px;
