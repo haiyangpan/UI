@@ -75,3 +75,32 @@ function zuopinShow(index){
 		$('.pic-wrap>ul>li').eq(i).attr("class","");
 	}
 }
+
+
+// 学员访谈视频轮播
+$(function(){
+	var index = 0;
+	$('.bg-white-middle>.right').on('click',function(){
+		videoHidden();
+		index++;
+		if(index>=3){
+			index = 0;
+		}
+		$('.video')[Math.abs(index)].style.display = "block";
+
+	})
+	$('.bg-white-middle>.left').on('click',function(){
+		videoHidden();
+		index--;
+		if(Math.abs(index)>=3){
+			index = 0;
+		}
+		$('.video')[Math.abs(index)].style.display = "block";
+
+	})
+	function videoHidden(){
+		for (var i = 0; i < $('.video').length; i++) {
+			$('.video')[i].style.display = "none";
+		}
+	}
+})
