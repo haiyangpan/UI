@@ -3,7 +3,7 @@ html,body{
 	padding:0;
 	min-width: 1200px;
 	width: 100%;
-	height:21424px;
+	/*height:21424px;*/
 	background: #f2f5f5;
 }
 #banner{
@@ -161,9 +161,13 @@ html,body{
 }
 /*全链路*/
 .qll{
-	height:3228px;
-	background: url(../img/bg-pink.jpg) no-repeat center center;
-	background-size:cover;
+	height:1629px;
+	background: #ff72aa; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ff72aa 0%, #ff887c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ff72aa 0%,#ff887c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ff72aa 0%,#ff887c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff72aa', endColorstr='#ff887c',GradientType=0 ); /* IE6-9 */
+	;
 }
 .qll .qll_txt1{
 	text-align: center;
@@ -243,12 +247,78 @@ html,body{
 	line-height: 58px;
 
 }
+.tpCm{
+	width: 1200px;
+	height: 457px;
+	margin:0 auto;
+	text-align: center;
+	padding-top: 112px;
+	margin-bottom: 133px;
+}
+.tpCm .busCom1{
+	color:#f2f5f5;
+	font-size: 32px;
+}
+ .tpCm .busCom2{
+	color:#f2f5f5;
+	font-size: 16px;
+	margin-top: 36px;
+	/*line-height: 70px;*/
+}
+.iDoStu{
+	width: 1200px;
+	height: 330px;
+	margin-top: 36px;
+}
+.iDoStu li{
+	width: 390px;
+	height: 330px;
+	float: left;
+	margin-right: 15px;
+	position: relative;
+}
+.iDoStu li .iDoStu_item{
+	width: 388px;
+	height: 142px;
+	font-size: 18px;
+	color:#fff;
+	text-align: center;
+	line-height: 28px;
+	padding-top: 138px;
+	
+}
+.iDoStu li:nth-of-type(1) .iDoStu_item{
+	background: url(../img/img_03.jpg) no-repeat;
+}
+.iDoStu li:nth-of-type(2) .iDoStu_item{
+	background: url(../img/img_05.jpg) no-repeat;
+}
+.iDoStu li:nth-of-type(3){
+	margin-right: 0px;
+}
+.iDoStu li:nth-of-type(3) .iDoStu_item{
+	background: url(../img/img_07.jpg) no-repeat;
+}
+.iDoStu li .stuCir{
+	width: 95px;
+	height: 95px;
+	position: absolute;
+	bottom: 0px;left:146px;
+	border-radius: 50%;
+	background: #ff8681;
+	margin:0 auto;
+	font-size: 24px;
+	color: #f2f5f5;
+	line-height: 95px;
+	font-weight: bold;
+    box-shadow: #ff6059 0px 5px 16px 2px;
+}
 .rijun{
 	width: 464px;
 	height: 137px;
 	margin:0 auto;
 	text-align: center;
-	margin-top: 83px;
+	padding-top: 40px;
 }
 .rijun span{
 	color:#fff;
@@ -257,43 +327,28 @@ html,body{
 }
 .firms{
 	width:1200px;
-	height: 153px;
+	height: 555px;
 	margin:0 auto;
 }
 .firms .firm{
 	float:left;
 	margin-right: 10px;
+	margin-top: 10px;
+}
+.firms .firm:nth-of-type(7){
+	width: 444px;
+	height: 96px;
+	color:#fff;
+	font-size: 18px;
+	text-align: center;
+	line-height: 30px;
+	padding:28px 133px;
 }
 .firms .firm:hover{ 
-	box-shadow: #fd5d98 10px 10px 70px 10px; 
+	box-shadow: #424849 5px 5px 20px 5px; 
 }
-.jiuyecom{
-	width: 450px;
-	height:70px;
-	margin:86px auto;
-	text-align: center;
-	color:#fff;
-	font-size: 16px;
-	line-height: 35px;
-}
-.jiuye{
-	width: 1200px;
-	height:685px;
-	margin:90px auto;
-	border-top:2px solid #ff98af;
-	border-bottom:2px solid #ff98af;
 
-}
-.jiuye .jytopic{
-	width: 327px;
-	height: 140px;
-	text-align: center;
-	margin:0 auto;
-	line-height: 140px;
-	font-size: 34px;
-	color:#fff;
-	margin-top: 90px;
-}
+
 .comps{
 	width: 1200px;
 	height: 316px;
@@ -348,7 +403,7 @@ html,body{
 }
 .business{
 	width: 100%;
-	height: 2893px;
+	height: 3165px;
 	background: #303637;
 }
 .business .busCom{
@@ -358,16 +413,16 @@ html,body{
 	text-align: center;
 	padding-top: 112px;
 }
-.business .busCom .busCom1{
+/* .busCom1{
 	color:#f2f5f5;
 	font-size: 32px;
 }
-.business .busCom .busCom2{
+.busCom2{
 	color:#f2f5f5;
 	font-size: 16px;
 	margin-top: 36px;
-	/*line-height: 70px;*/
-}
+	line-height: 70px;
+} */
 .business .busCom .bannerCard{
 	width:1200px;
 	height: 757px;
@@ -1611,6 +1666,7 @@ footer>p{
 	color:#fff;
 }
 footer>p:nth-of-type(1){
+	font-size: 36px;
 	padding-top:121px;
 }
 footer>p:nth-of-type(1)>span{
