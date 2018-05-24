@@ -8,14 +8,14 @@ html,body{
 }
 #banner{
 	width: 100%;
-	height: 1080px;
+	height: 900px;
 	background: url(../img/banner.jpg) no-repeat center center;
 	background-size:cover;
 }
 #banner #center{
-	width: 1200px
+	width: 1200px;
 	margin:0 auto;
-	padding-top: 500px;
+	padding-top: 320px;
 }
 #banner #center #topic{
 
@@ -199,11 +199,16 @@ html,body{
 	margin-right: 6px;
 	background: #f2f5f5;
 }
-.advantages .advantage:hover{ 
-	box-shadow: #fd5d98 0 0px 30px; 
+.advantages .advantage:hover{
+box-shadow: #fd5d98 0 0px 30px;
 }
 .advantages .advantage div{
-	margin: 0 28px;
+margin: 0 28px;
+}
+.advantages .advantage .ads{
+	width: 293px;
+	height: 213px;
+	margin-left:0;
 }
 .advantages .advantage div .tpc1{
 	color:#ff71ac;
@@ -1486,7 +1491,6 @@ height: 789px; */
 	width:1300px;
 	margin:0 auto;
 	position: relative;
-	height:;
 }
 .bg-white-middle{
 	width:1200px;
@@ -1553,7 +1557,7 @@ height: 789px; */
 	height:540px;
 	width:888px;
 }
-.video-txt #playBtn{
+.video-txt .playBtn{
 	width: 149px;
 	height: 149px;
 	position: absolute;
@@ -1662,7 +1666,7 @@ footer{
 }
 footer>p{
 	text-align: center;
-	font-weight:36px;
+	font-size: 36px;
 	color:#fff;
 }
 footer>p:nth-of-type(1){
